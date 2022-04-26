@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Nunito";
+    outline: none;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+}
+.exam{
+    display: flex;
+    width: 85%;
+    height: 85%;
+    margin-top: 70px;
+    overflow: hidden;
+    padding: 10px;
+}
+.quest{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.qcon{
+    width: 100%;
+    height: 85%;
+    background: white;
+    box-shadow: 0 0 5px 2px #0000002f;
+    border-radius: 10px;
+    padding: 20px;
+}
+.submit{
+    width: 100%;
+    height: 10%;
+    background: #f05858;
+    transition: 0.3s ease;
+    box-shadow: 0 0 5px 2px #0000005f;
+    color: white;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+.submit:hover{
+    box-shadow: 0 0 5px 2px #00000000;
+}
+.float-bar{
+    position: fixed;
+    box-shadow: 0 0 5px 2px #0000002f;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 60px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.abtn{
+    width: 100px;
+    background: #333;
+    color: white;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    user-select: none;
+}
+.part{
+    display: flex;
+}
+.num{
+    margin-right: 5px;
+}
+.options{
+    margin-left: 20px;
+}
+.opt{
+    display: flex;
+    align-items: center;
+}
+.opt input{
+    margin-right: 5px;
+}
+
+.conq{
+    width: 20%;
+    height: auto;
+    overflow-y: auto;
+    margin-left: 10px;
+    padding: 5px 0;
+}
+.q-num{
+    width: 100%;
+    /* padding: 0 10px; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.qn{
+    flex: 1 0 60px;
+    margin: 0 3px 10px 3px;
+    width: 60px;
+    height: 60px;
+    display: grid;
+    place-items: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 2px #0000002f;
+    transition: 0.3s ease;
+    font-size: 14px;
+    user-select: none;
+    cursor: pointer;
+}
+.qn:hover{
+    box-shadow: 0 0 5px 2px #0000000f;
+}
+.qn-active{
+    background: #333;
+    color: white;
+}
+ 
+@media screen and (min-width: 60px) {
+    .qn {
+        max-width: 60px;
+    }
+}

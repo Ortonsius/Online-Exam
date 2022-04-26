@@ -1,0 +1,63 @@
+[+] Online Exam
+    [+] Page:
+        [-] Login
+            [=] Clean all local storage
+        [-] Home
+            [=] Localstorage: score,schedule
+        [-] Exam
+            [=] Localstorage: question,indicate
+        
+    [+] Implementation:
+        [-] API
+            [=] Only send JSON type
+        [-] DB Controller
+
+    [+] API:
+        [+]  URL
+            [-] /api/login
+            [-] /api/logout
+            [-] /api/exam/quest
+            [-] /api/exam/schedule
+            [-] /api/exam/submit
+
+    [+] URL:
+        [-] /                   LOGIN
+        [-] /home               Dashboard
+        [-] /exam               Exam
+        [-] /api/login          Login Account
+        [-] /api/logout         Logout Account
+        [-] /api/exam/quest     All question data
+        [-] /api/exam/schedule  Exam schedule
+        [-] /api/exam/submit    Submit the answer
+
+    [+] DB:
+        [+] Student
+            [-] StuID
+            [-] Name
+            [-] Password
+            [-] Grade
+        [+] Question
+            [-] ExmID
+            [+] Question (JSON):
+                [-] QID
+                [-] Question
+                [-] Number
+                [-] A
+                [-] B
+                [-] C
+                [-] D
+                [-] E
+            [+] Answer (JSON):
+                [-] QID
+                [-] Answer
+        [+] Exam
+            [-] ExmID
+            [-] Subject
+            [-] Grade
+            [-] date
+            [-] time
+            [-] duration
+        [+] Score
+            [-] StuID
+            [-] ExmID
+            [-] Score
